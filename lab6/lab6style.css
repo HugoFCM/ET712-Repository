@@ -1,0 +1,72 @@
+*{box-sizing: border-box;} /*preserve the 100% width of the screen */
+img{width: 100%;}
+.header{
+    background-color: whitesmoke;
+    display: flex;
+}
+.logo{
+    width: 7%;
+    padding: 1em;
+}
+.title{
+    width: 50%;
+    text-align: center;
+    padding: 1em;
+    font-size: 2.5em;
+    color: red;
+    font-family: "Franklin Gothic Medium";
+}
+.quicklinks{
+    width: 20%;
+    font-size: 1.5em;
+    margin-left: auto;
+    display: flex;
+}
+.quicklinks a{
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+    padding: 1.2em 0.2em;
+    text-decoration: none;
+}
+.quicklinks a:hover{
+    opacity: 0.6;
+    transform: scale(0.9);
+}
+/*NAVLINKS*/
+.navlinks{
+    width: 100%;
+    background-color: aliceblue;
+    text-align: center;
+}
+.navlinks a{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    padding: 1em;
+    font-size: 1.2em;
+    color: darkblue;
+    text-decoration: none;
+}
+.navlinks a:hover{
+    background-color: red;
+}
+
+/* Main - Intro image*/
+.introimage{
+    position: relative;
+}
+.intro{
+    position: absolute;
+    bottom: 20%;
+    right: 10;
+    background-color: rgba(200,200,200, 0.6);
+    padding: 1em 2em;
+    border-radius: 12px;
+}
+.intro h1{
+    color: darkblue;
+}
+.intro p{
+    font-size: 1.2em;
+}
