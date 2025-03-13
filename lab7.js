@@ -51,3 +51,77 @@ btnsquare.addEventListener("click", function(){
 btnrectangle.addEventListener("click", function(){
     shape.className = "rectangle"
 })
+
+/**
+ * Tuesday, March 11, traditional events
+ */
+// onmouseout event
+// collect the element
+let event6 = document.querySelector(".event6")
+// add a mouseout event to open an alert dialog box
+event6.onmouseout = function(){
+    alert("MOUSE OUT - Example 6")
+}
+
+// example 7
+// inline event
+function openalert(){
+    alert("CLICK EVENT - Example 7")
+}
+
+// example 8 mouseover event
+// change the background color of a div when the mouse hover
+// collect element
+let divexample8 = document.querySelector(".divexample8")
+divexample8.onmouseout = function(){
+    let randred = Math.floor(Math.random()*255)
+    let randgreen = Math.floor(Math.random()*255)
+    let randblue = Math.floor(Math.random()*255)
+    divexample8.style.backgroundColor = `rgb(${randred},${randblue},${randgreen})`
+}
+
+// example 9: keyboard event
+// collect the elements
+let inputex9 = document.querySelector(".inputex9")
+let ex9paragraph = document.querySelector(".ex9paragraph")
+
+inputex9.onkeydown = function(event){
+    ex9paragraph.innerHTML = `key = ${event.key} was pressed`
+}
+
+// EXERCISE
+// note: use querySelector() or querySelectorAll()
+// collect elements: search for the first p with class ps1
+// add a mouseout event to change the text content to "STUDENT'S FULL NAME"
+
+let ps1 = document.querySelector(".ps1")
+let ps2 = document.querySelector(".ps2")
+
+ps1.onmouseout = function(){
+    ps1.innerHTML = "Hugo Carcamo";
+}
+
+// search for the second p with class ps2
+// add a click event to the ps2 to change the font-size to 25px  and color to olive when is clicked
+
+ps2.addEventListener("click", function () {
+    ps2.style.fontSize = "25px";
+    ps2.style.color = "olive";
+});
+
+// search for the first div with class divs2
+// add a click event to change the background color to indigo
+
+let divs2 = document.querySelector(".divs2")
+divs2.addEventListener("click", function(){
+    divs2.style.backgroundColor = "indigo";
+});
+
+// search for the second div with class divs2
+// add a keydown event to change the width of divs2 to 300px
+
+let divs3 = document.querySelector(".divs3");
+
+document.addEventListener("keydown", function () {
+    divs3.style.width = "300px";
+});
