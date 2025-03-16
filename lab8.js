@@ -63,3 +63,18 @@ linkreadmore.addEventListener("click", function(){
 closex.addEventListener("click", function(){
     modalwindow.style.display = "none"
 })
+let touchCounter = 0
+
+let circle = document.getElementById("circle")
+let counterDisplay = document.getElementById("counter")
+let resetButton = document.getElementById("resetButton")
+
+circle.addEventListener("click", function() {
+    touchCounter++
+    counterDisplay.textContent = touchCounter
+})
+
+resetButton.addEventListener("click", function() {
+    touchCounter = 0
+    counterDisplay.textContent = touchCounter
+})
