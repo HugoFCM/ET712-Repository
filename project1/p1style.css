@@ -3,9 +3,13 @@ img{width: 100%; display: block;}
 .header{
     background-color: rgb(255, 255, 143);
     display: flex;
+    position: fixed;
     height: 8em;
     width: 100%;
-    top: 0%;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    text-align: center;
 }
 .logo{
     width: 10%;
@@ -30,7 +34,8 @@ img{width: 100%; display: block;}
     padding: 50px;
     position: absolute;
     width: 100%;
-    bottom: 0%S;
+    bottom: 0%;
+    left: 0%;
 }
 .navlinks{
     margin-left: auto;
@@ -46,6 +51,7 @@ img{width: 100%; display: block;}
     justify-content: center;
 }
 .verticalcard{
+    margin-top: 145px;
     height: 430px;
     width: 250px;
     border-radius: 10px;
@@ -69,7 +75,7 @@ img{width: 100%; display: block;}
     
 }
 .verticalcard:hover{
-    transform: translateY(20px);
+    transform: translateY(-10px);
     box-shadow: 0px -5px 10px gray;
 }
 .verticalcard:hover .h3card{
@@ -85,10 +91,12 @@ img{width: 100%; display: block;}
     position: relative;
 }
 .peek{
+    top: 250px;
     width: 200px;
     position: absolute;
     left: -50px;
     bottom: -300px;
     max-width: 100%;
+    cursor: pointer;
   }
   
