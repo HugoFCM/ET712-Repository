@@ -1,0 +1,19 @@
+*{box-sizing: border-box;}
+#myform{
+    width: 400px;
+    margin: auto;
+    background-color: pink;
+    padding: 2em;
+}
+.formcontrol{
+    margin: 2em;
+}
+.errormsg{
+    color: crimson;
+    padding: 0.8em;
+}
+.successmsg{
+    color: greenyellow;
+    padding: 0.8em;
+}
+

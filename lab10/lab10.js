@@ -58,7 +58,7 @@ if (passwordvalue < 8){
     errormsg.style.display = "block"
     btnsubmit.disabled = true
 }else{
-    errormsg.style.display = "none"
+    successmsg.style.display = "none"
     btnsubmit.disabled = false
 }
 
