@@ -43,10 +43,11 @@ const collectedgender = function(event){
    <>
       <h1>Lab 14, React state</h1>
       <p>Count = {count}</p>
-      <button onClick={()=>setCount(count+1)}>Increment the count</button>
-      <button onClick={()=>setCount(0)}>Reset button</button>
+      <button className='add' onClick={()=>setCount(count+1)}>Increment the count</button>
+      <button className='reset' onClick={()=>setCount(0)}>Reset button</button>
 
       <h1>Form application using state</h1>
+      <div className='form'>
       <form onSubmit={submitform}>
         <fieldset>
           <legend>Forms in ReactJS</legend>
@@ -92,11 +93,14 @@ const collectedgender = function(event){
           <input type='submit'/>
         </fieldset>
       </form>
+      </div>
       {/**test date in the form after submission */}
+      <div className='text'>
       <p>Name = {inputs.username}</p>
       <p>Lucky number = {inputs.luckynumber}</p>
       <p>Comments = {textcomment}</p>
       <p>Gender = {mygender}</p>
+      </div>
    </>
   );
 }
