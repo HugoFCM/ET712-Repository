@@ -1,24 +1,64 @@
-body{
-  margin: 0%;
-  padding: 0%;
+body {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  background-color: crimson;
+  background-color: crimson; /* Set the overall background color */
 }
+
+.hero {
+  background-image: url('./images/lgrb.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; 
+}
+
 .header {
-  background-color: #000033; 
+  background-color: #000033;
   display: flex;
   align-items: center;
-  padding: 10px;
-  color:white;
-  height:25px;
+  height: 70px;
+  padding: 0 0 0 20px;
+  color: white;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo img {
-  width: 50px; 
+  width: 50px;
 }
+
 .message {
   color: white;
-  margin-left: 20px; 
+  margin-left: 20px;
   font-size: 2rem;
   font-family: fantasy;
+  white-space: nowrap;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.icon-section {
+  display: flex;
+  align-items: center;
+  background-color: #FABB23;
+  height: 100%;
+  padding: 0 10px;
+}
+
+.icon {
+  width: 30px;
+  height: auto;
+  margin: 0 15px;
+}
+
+.divider {
+  width: 2px;
+  height: 30px;
+  background-color: #000033;
+  margin: 0 10px;
 }
