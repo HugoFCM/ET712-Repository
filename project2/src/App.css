@@ -2,15 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: crimson; /* Set the overall background color */
-}
-
-.hero {
-  background-image: url('./images/lgrb.jpg');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh; 
+  background-color: crimson;
 }
 
 .header {
@@ -61,4 +53,76 @@ body {
   height: 30px;
   background-color: #000033;
   margin: 0 10px;
+}
+
+.background-image {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(0.5) saturate(0.7);
+  transition: filter 2s ease, box-shadow 1.2s ease;
+  display: block;
+}
+
+.background-image.bright {
+  filter: brightness(1) saturate(1.1);
+  box-shadow: 0 0 20px 10px #FABB23;
+}
+
+.hero-text {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateY(-50px);
+  color: white;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  opacity: 0;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  z-index: 1;
+}
+
+.hero-text.visible {
+  opacity: 1;
+  transform: translate(-50%, -50%) translateY(0);
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin: 1rem 0 2rem 0;
+  font-weight: bold;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin: 2rem 0 2rem 0;
+  font-weight: bold;
+}
+
+.shop-btn {
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  font-size: 1.5rem;
+  font-family: 'Georgia', serif;
+  background-color: transparent;
+  border: 3px solid #FABB23;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.shop-btn:hover {
+  background-color: #FABB23;
+  color: #000033;
+  box-shadow: 0 0 15px 5px #FABB23;
+}
+
+.shop-section {
+  min-height: 100vh;
+  background-color: crimson;
+  color: white;
+  font-family: 'Georgia', serif;
+  padding: 120px 20px 40px 20px;
+  text-align: center;
 }
